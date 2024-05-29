@@ -9,12 +9,25 @@
     <h2>Formulario Completo</h2>
     <form action="/submit" method="post"></form>
     <label for="nome">name</label>
-    <input type="text" id="email" name="email" required><br
+    <input type="text" id="email" name="email" required><br>
     <label for="email">email</label>
-    <input type="email" id="email" name="email" required><br
+    <input type="email" id="email" name="email" required><br>
     <label for="telefone">telefone</label>
-    <input type="tel" id="telefone" patern="[0-9]-{2}-[0-9]{5}-[0-9]{4}" placeholder="xx=xxxxx=xxxx"<br
-    <input type="number" id="idade" min="18" max="100"<br
+    <input type="tel" id="telefone" patern="[0-9]-{2}-[0-9]{5}-[0-9]{4}" placeholder="xx=xxxxx=xxxx"><br>
+    <input type="number" id="idade" min="18" max="100"><br>
     <label for="genero">gênero</label> 
+    <select id="genero" name="genero">
+    <option value="masculino">masculino</option>
+    <option value="feminino">feminino</option>
+    </select><br>
+    <label for="mensagem">mensagem</label>
+    <textared id="mensagem"name="mensagem" rows="4" cols="50"></textared><br>
+    <label for="arquivo">selecione um arquivo</label>
+    <input type="file" id="arquivo" nome="arquivo"><br>
+    <input type="checkbox" id="aceito" name="aceito"
+    required>
+    <label for="aceito">eu aceito os termos e condições</label><br>
+    <input type="submit" value="enviar">
+</form>
 </body>
 </html>
